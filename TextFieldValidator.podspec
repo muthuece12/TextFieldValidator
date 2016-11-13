@@ -103,8 +103,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resource  = "error@2x.png"
+  s.resources = "*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
