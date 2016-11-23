@@ -267,7 +267,7 @@
 -(void)showErrorIconForMsg:(NSString *)msg{
     UIButton *btnError=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
     [btnError addTarget:self action:@selector(tapOnError) forControlEvents:UIControlEventTouchUpInside];
-    NSString *imgPath = [[NSBundle bundleForClass:[TextFieldValidator class]] pathForResource:@"error" ofType:@"png"]];
+    NSString *imgPath = [[NSBundle bundleForClass:[TextFieldValidator class]] pathForResource:@"error" ofType:@"png"];
     [btnError setBackgroundImage:[UIImage imageWithContentsOfFile:imgPath] forState:UIControlStateNormal];
     self.rightView=btnError;
     self.rightViewMode=UITextFieldViewModeAlways;
